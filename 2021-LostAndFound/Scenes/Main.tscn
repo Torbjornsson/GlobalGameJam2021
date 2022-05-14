@@ -34,9 +34,6 @@ margin_right = 1595.01
 margin_bottom = 661.926
 texture = ExtResource( 10 )
 expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Floor" parent="Map" instance=ExtResource( 4 )]
 position = Vector2( 393.666, 616.708 )

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scripts/HUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/Hud.cs" type="Script" id=1]
 [ext_resource path="res://Font/Cute Little Sheep.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
