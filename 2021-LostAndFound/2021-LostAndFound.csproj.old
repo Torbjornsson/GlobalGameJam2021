@@ -1,9 +1,6 @@
-<Project Sdk="Godot.NET.Sdk/3.3.0">
+<Project Sdk="Godot.NET.Sdk/3.2.3">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <RootNamespace>LostAndFound</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
-  </ItemGroup>
 </Project>

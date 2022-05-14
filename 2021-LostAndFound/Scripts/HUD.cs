@@ -1,32 +1,37 @@
 using Godot;
+using JetBrains.Annotations;
 
-public class HUD : Control
+namespace LostAndFound.Scripts
 {
-    private PackedScene packedScene;
-    private int points;
-    private Label label;
-
-    public override void _Ready()
+    public class Hud : Control
     {
-        packedScene = (PackedScene) GD.Load("res://Scenes/Points.tscn");
-        label = (Label)GetChild(0).GetChild(1);
-    }
+        private PackedScene _packedScene;
+        private int _points;
+        private Label _label;
 
-    private void AddPoint()
-    {
-        points++;
-        var sock = (TextureRect) packedScene.Instance();
-        GetChild(0).GetChild(0).AddChild(sock);
-        if (points >= 3)
+        public override void _Ready()
         {
-            Wins();
-            GD.Print("Win");
+            _packedScene = (PackedScene) GD.Load("res://Scenes/Points.tscn");
+            _label = (Label)GetChild(0).GetChild(1);
         }
-    }
 
-    private void Wins()
-    {
-        label.Text = "Congratulations you have found all the socks";
+        [UsedImplicitly]
+        private void AddPoint()
+        {
+            _points++;
+            var sock = (TextureRect) _packedScene.Instance();
+            GetChild(0).GetChild(0).AddChild(sock);
+            if (_points >= 3)
+            {
+                Wins();
+                GD.Print("Win");
+            }
+        }
+
+        private void Wins()
+        {
+            _label.Text = "Congratulations you have found all the socks";
         
+        }
     }
 }

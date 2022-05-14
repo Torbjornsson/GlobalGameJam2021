@@ -1,8 +1,13 @@
 using Godot;
+using JetBrains.Annotations;
 
-public class Main : Node
+namespace LostAndFound.Scripts
 {
-    public override void _Ready()
+    [UsedImplicitly]
+    public class Main : Node
     {
+        public override void _Ready()
+        {
+        }
     }
 }

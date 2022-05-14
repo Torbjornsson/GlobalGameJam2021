@@ -1,4 +1,5 @@
 using Godot;
+using LostAndFound.Scripts;
 
 public class Text : RichTextLabel
 {

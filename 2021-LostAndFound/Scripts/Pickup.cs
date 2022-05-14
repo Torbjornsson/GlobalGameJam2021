@@ -1,4 +1,5 @@
 ﻿using Godot;
+using JetBrains.Annotations;
 
 namespace LostAndFound.Scripts
 {
@@ -12,6 +13,7 @@ namespace LostAndFound.Scripts
             Connect("PickedUp", GetNode("../../HUD"), "AddPoint");
         }
 
+        [UsedImplicitly]
         private void _on_Sock_body_entered(PhysicsBody2D body2D)
         {
             if (body2D.Name == "Player")
